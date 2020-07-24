@@ -1,0 +1,17 @@
+--- HEXADECIMAL ---
+RGB = Red Green Blue
+# _ _ _ _ _ _
+Dois riscos pra cada
+
+0 = ausência #0000000
+F = máximo #FFFFFF
+
+#FF0000
+
+--- RGB ---
+RGB = Red Green Blue
+0 - 255
+0 = ausência
+255 = máximo
+
+rgb(0, 255, 0)

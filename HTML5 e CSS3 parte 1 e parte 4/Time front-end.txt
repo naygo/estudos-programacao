@@ -1,0 +1,7 @@
+--- TIME FRONT-END ---
+
+UX - User Experience (Usabilidade): responde como as informações vão ser entregues
+UI - User Interface: (Design): da o visual
+Desenvolvedor Front-end: transforma tudo em código para a web
+
+UX + UI + Desenvolvedor 
