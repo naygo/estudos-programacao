@@ -1,27 +1,51 @@
-# Alurapic
+# Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+## Começando
++ Instalação do Angular CLI
+    - <kbd>npm install -g @angular/cli</kbd>
++ Criação de um novo projeto com a ferramenta e como executá-lo
+    - <kbd>ng new nome-projeto</kbd>
+    - <kbd>ng serve --open</kbd>
++ Data binding: um mecanismo para coordenar o que os usuários veem; sincronização entre model e view.
+    - {{}} para _tags_
+    - [] para atributos
++ Convenções
+    - Para arquivos: _menubar.component.ts_
+    - Para nomes: _MenubarComponent_
 
-## Development server
+## Criando o primeiro componente
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
++ Adicionar bootstrap.css
+    - download pelo _npm_
+    - adicionar diretório ao arquivo _angular.json_, em styles
++ Criação de um novo componente
+    - criar pasta para o componente
+    - criar os components _html_ e _ts_
+    - exportar a classe e a transformar em componente:
+    ```js
+     @Component({
+         selector: '';
+         templateUrl: '';
+     })
+     export class Classe { }
+     ```
++ A importância de declarar o componente em um módulo
+    - um componente deve fazer parte de um módulo, obrigatoriamente
++ Como passar dados para o componente através das **inbound properties**
+    - propriedade do tipo componente.ts que aceitam receber um valor por meio de sua forma declarativa
+    - usar <kbd>@Input()</kbd>
++ Criação de um módulo e boas práticas
+    - criar módulos para importar todos os componentes, e o módulo principal importar estes módulos
+    - <kbd>@NgModule</kbd> para tornar a classe um módulo
++ A diretiva <kbd>*ngFor</kbd>
+    - muda o comportamento de um componente já existente
+    - renderiza um modelo para cada item em uma coleção
+    - diretiva é colocada em um elemento, que se torna o pai dos modelos clonados.
 
-## Code scaffolding
+## Integração com Web API's
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
++ Front-end e back-end rodam em servidores separados
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
++ **Injeção de depêndencia**: feita com constructor e provider (adicionar import no module principal)
+    - requisições ajax para o backend
+  

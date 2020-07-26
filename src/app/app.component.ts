@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,19 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  photos = [
-    { 
-      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg', 
-      description: 'Leão'
-    },
-    { 
-      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lioness_Etosha_NP.jpg/500px-Lioness_Etosha_NP.jpg', 
-      description: 'Leoa'
-    },
-    { 
-      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lioness_Etosha_NP.jpg/500px-Lioness_Etosha_NP.jpg', 
-      description: 'Leoa'
-    }         
-  ];  
+  photos = [];
+
+  constructor(http: HttpClient) { // requisições ajax para o backend
+    console.log(http)
+  }
 
 }
