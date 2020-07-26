@@ -46,8 +46,14 @@
 
 + Front-end e back-end rodam em servidores separados
 
-+ **Injeção de depêndencia**: feita com constructor e provider (adicionar import no module principal)
-    - requisições ajax para o backend
++ Consumir uma Web API através do serviço <kbd>HttpClient</kbd>
+    - **Injeção de depêndencia**: feita com constructor e _provider_ (adicionar import no module principal)
+        - requisições ajax para o backend
 
 + Isolando aceeso à API em uma classe especializada
+    - classe **service**
++ Tipando a API
+    - criando uma **interface** para saber como lidar com os dados
++ Ciclo de vida de um componente
+    - <kbd>ngOnInit</kbd>
   
