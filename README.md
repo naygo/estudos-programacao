@@ -48,4 +48,6 @@
 
 + **Injeção de depêndencia**: feita com constructor e provider (adicionar import no module principal)
     - requisições ajax para o backend
+
++ Isolando aceeso à API em uma classe especializada
   
