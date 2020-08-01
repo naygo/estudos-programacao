@@ -10,7 +10,8 @@ import { PhotoFormComponent } from './photo-form/photo-form.component';
 @NgModule({
     declarations: [ 
         PhotoComponent, 
-        PhotoListComponent, PhotoFormComponent 
+        PhotoListComponent, 
+        PhotoFormComponent 
     ],
     imports: [ 
         HttpClientModule,
