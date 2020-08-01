@@ -56,4 +56,18 @@
     - criando uma **interface** para saber como lidar com os dados
 + Ciclo de vida de um componente
     - <kbd>ngOnInit</kbd>
+
+## Single Page Applications e Rotas
+
++ Gerando componente pelo CLI
+    - <kbd>ng generate component pasta/pasta-componente</kbd>
+
++ BrowserModule e CommonModule
+    - O CommonModule possui todas as diretivas básicas como NgIf, NgFor, NgForOf, etc.
+    - O BrowserModule possui funcionalidades essenciais para rodar e iniciar a aplicação.
+    - O BrowserModule só deve ser importado no modulo principal da aplicação.
+
++ Roteamento de uma single page application
+    - o index carrega os componentes de acordo com as rotas
+    - intercepta a mudança de endereço antes dela chegar ao backend, e carrega se existir
   
