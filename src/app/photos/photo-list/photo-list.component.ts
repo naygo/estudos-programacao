@@ -19,8 +19,9 @@ export class PhotoListComponent implements OnInit {
   
   ngOnInit(): void {
     
+    const userName = this.activatedRoute.snapshot.params.userName;
     this.photoService
-      .listFromUser('flavio')
+      .listFromUser(userName)
       .subscribe(photos => this.photos = photos)
   }
 }

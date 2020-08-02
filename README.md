@@ -70,4 +70,13 @@
 + Roteamento de uma single page application
     - o index carrega os componentes de acordo com as rotas
     - intercepta a mudança de endereço antes dela chegar ao backend, e carrega se existir
+        - o framework Angular interpreta essa URL e verifica se há um roteamento associado
+
++ Como lidar com páginas 404
+    - gerar módulo _errors_ e componente _not-found_
+
++ Parametrizando rotas e como obter valores do segmento parametrizado
+    - com <kbd>ActivatedRoute</kbd> é possível extrair os parâmetros  e parametrizar as rotas no <kbd>app.routing.module.ts</kbd>
+
+
   
