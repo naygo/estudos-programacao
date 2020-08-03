@@ -78,5 +78,44 @@
 + Parametrizando rotas e como obter valores do segmento parametrizado
     - com <kbd>ActivatedRoute</kbd> é possível extrair os parâmetros  e parametrizar as rotas no <kbd>app.routing.module.ts</kbd>
 
+## Novos conceitos
+
++ Novo componente para listar photos
+    - componente _photos_ para listar as fotos separando corretamente
+
++ Adequação dos dados recebidos pelo componente
+    - função _groupColumns_ para partir o array de photos 
+
++ Quando a fase OnInit não é suficiente
+    - essa fase executa só uma vez, e nesse caso era necessário a executar mais vezes
+
++ A interface OnChanges, e como interagir com SimpleChanges
+    - OnChanges: "um gancho de ciclo de vida chamado quando qualquer propriedade ligada a dados de uma diretiva é alterada."
+    - SimpleChanges: "um hashtable de alterações representados pelos objetos do SimpleChange armazenados no nome da propriedade declarada a que pertencem em uma Directive ou Component"
+    
+## Melhorando a experiência do usuário
+
++ Event bind
+    - nome do evento entre parenteses
+    - contrário do data bind, são unidirecionais, só que cada um tem uma direção específica
+        - [] - dado vem do componente (fonte de dados) para o template
+        - () - o evento é do disparado, vai da view para o compoenente
+
++ Pipe e implementação
+    - | -> pipe
+    - pipes ("tubos", em português) podem gerar transformações nos dados, podemos criar os nossos
+    - para que seja um Pipe, sua classe deve ser anotada com o decorator <kbd>@Pipe</kbd>, além de implementar o método transform(), que possui determinada assinatura (parâmetros)
+        - implementando a _interface PipeTransform_
+
++ Resolver 
+    - resolve os dados durante a navegação de uma rota para disponibiliza-lós para um componente
+
++ Padrão debounce com RxJS
+    - usando debounce para criar um delay na busca e não haver tantas requisições
+    - usar o método <kbd>OnDestroy</kbd> para evitar gastos desnecessários da memória, um problema famoso e conhecido por _memory leak_!
+
+> É boa prática implementar um padrão de projeto, chamado **debounce**, toda vez que for executar uma operação que será disparada repetidas vezes de acordo com eventos gerados pelo usuário
+
+
 
   
