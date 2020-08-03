@@ -122,4 +122,12 @@
     - backend deve estar para isso
     - é possível fazer if/else em templates com o angular
 
+## Lapidando ainda mais nossa aplicação
+
++ Submódulos
+    - criando módulos dentro de todos os componentes para melhor organização
+
++ Integração com Font Awesome
+    - integrando fonte awesome para utilizar ícones
+
   
