@@ -116,6 +116,10 @@
 
 > É boa prática implementar um padrão de projeto, chamado **debounce**, toda vez que for executar uma operação que será disparada repetidas vezes de acordo com eventos gerados pelo usuário
 
-
++ Paginação
+    - resolve o problema de carregamento excessivo de dados
+    - componente _load-button_ para carregar imagens
+    - backend deve estar para isso
+    - é possível fazer if/else em templates com o angular
 
   
