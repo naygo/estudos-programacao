@@ -130,4 +130,9 @@
 + Integração com Font Awesome
     - integrando fonte awesome para utilizar ícones
 
++ Component container e ng-content
+    - componente _card_ que aceita conteúdo entre as tags
+
+
+
   
