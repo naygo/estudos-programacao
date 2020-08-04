@@ -148,6 +148,8 @@
 + Terminando a implementação da diretiva
     - usando ElementRef e Render para manipular o DOM
     - diretiva pode receber parâmetros
-    
+    - pode ser usada como atributo se envolvida por colchetes
+    > todo componente é uma diretiva com template 
+
 
   
