@@ -133,6 +133,10 @@
 + Component container e ng-content
     - componente _card_ que aceita conteúdo entre as tags
 
++ Componentizando o filtro
+    - por excesso de html, foi criado um componente para a barra de pesquisa, porém o filtro parou de funcionar
+
++ Output property
 
 
   
