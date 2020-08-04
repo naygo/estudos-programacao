@@ -1,4 +1,4 @@
-# Angular
+# Angular parte 1
 
 ## Começando
 + Instalação do Angular CLI
@@ -149,7 +149,10 @@
     - usando ElementRef e Render para manipular o DOM
     - diretiva pode receber parâmetros
     - pode ser usada como atributo se envolvida por colchetes
-    > todo componente é uma diretiva com template 
+    > todo componente é uma diretiva com template
 
+# Angular parte 2: Autenticação, Forms e lazy loading 
 
-  
+# O componente de login
++ Criando pasta _home_ para componentes de login
+    - o componente _signin_ foi declarado em _home_, mas não é preciso expotá-lo porque ele não será utilizado em outra interface
