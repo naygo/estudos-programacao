@@ -137,6 +137,17 @@
     - por excesso de html, foi criado um componente para a barra de pesquisa, porém o filtro parou de funcionar
 
 + Output property
+    - usada para fazer o filtro funcionar e limpá-lo
+    - são propriedades decoradas com o decorator Output
+    - é necessário que a propriedade seja uma instância de _EventEmitter_
+    - o nome da output property é o mesmo nome do evento utilizado por aqueles que desejam interagir com o componente
 
++ Criando a primeira diretiva
+    - criando uma diretiva para aplicar css em mais de um componente
+
++ Terminando a implementação da diretiva
+    - usando ElementRef e Render para manipular o DOM
+    - diretiva pode receber parâmetros
+    
 
   
