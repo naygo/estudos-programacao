@@ -155,4 +155,12 @@
 
 # O componente de login
 + Criando pasta _home_ para componentes de login
-    - o componente _signin_ foi declarado em _home_, mas não é preciso expotá-lo porque ele não será utilizado em outra interface
+
+> o componente _signin_ foi declarado em _home_, mas não é preciso expotá-lo porque ele não será utilizado em outra interface
+
+# Validação de formulários
++ Validar para não aceitar os campos em branco
++ A validação precisa ser feita no Angular, porque o HTML5 não tem integração com o angular
++ A validação fica no componente e não no template
+    - é preciso importat o <kbd>ReactiveFormsModule</kbs> de _@angular/forms_
++ *FormBuilder* - construtor de formulários
