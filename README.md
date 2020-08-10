@@ -164,3 +164,8 @@
 + A validação fica no componente e não no template
     - é preciso importat o <kbd>ReactiveFormsModule</kbs> de _@angular/forms_
 + *FormBuilder* - construtor de formulários
+
+# Componentizando mensagens de validação
++ Criando _vmessage_ na pasta _componenets_ em _shared_ para componentizar a menssagem de validação que antes estava na tag _small_
+
+# Enviando credenciais para a API
