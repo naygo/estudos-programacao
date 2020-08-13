@@ -153,19 +153,54 @@
 
 # Angular parte 2: Autenticação, Forms e lazy loading 
 
-# O componente de login
+## O componente de login
 + Criando pasta _home_ para componentes de login
 
 > o componente _signin_ foi declarado em _home_, mas não é preciso expotá-lo porque ele não será utilizado em outra interface
 
-# Validação de formulários
+## Validação de formulários
 + Validar para não aceitar os campos em branco
 + A validação precisa ser feita no Angular, porque o HTML5 não tem integração com o angular
 + A validação fica no componente e não no template
     - é preciso importat o <kbd>ReactiveFormsModule</kbs> de _@angular/forms_
 + *FormBuilder* - construtor de formulários
 
-# Componentizando mensagens de validação
+## Componentizando mensagens de validação
 + Criando _vmessage_ na pasta _componenets_ em _shared_ para componentizar a menssagem de validação que antes estava na tag _small_
 
-# Enviando credenciais para a API
+## Enviando credenciais para a API
++ Arquivo _authService_ e método em _signin.component.ts_ para mandar as credenciais
+
+## Redirecionamento pós login
++ this.router.navigateByUrl('user/' + userName)
++ this.router.navigate(['user', userName])
+
+## ViewChild: obtendo referências do template 
++ Necessário para dar focus no input após tentativa falha de login
+    - DOM manipulado diretamente
++ Após injetar uma variável de template referente ao campo desejado (ex.: #userNameInput), essa variável será do tipo _ElementRef_. Com isso teremos acesso ao método focus().
+
+## Detectando a plataforma de execução
++ O Angular tem mecanismos que permitem identificar se o código está sendo rodado no navegador ou em outra plataforma (server-side, etc).
++ Vamos utilizar um desses mecanismos para acionar o focus() somente se estivermos no navegador.
++ Criado o serviço _platform-detector.service.ts_
+
+# Autenticação e o papel do token
+## Acesso ao header de resposta
++ Coletando o token do header em _authService_ com com **pipe(tap())**, mas antes, expondo ele em .post com o _observe_ 
+
+## Armazenamento do token
++ Guardar o token no _Local Storage_ para enviá-lo a cada requisição
++ Criado um _token.service.ts_ para executar métodos ligados ao token
+
+## Segurança do token
++ O token é gerado no padrão JWT(Json Web Token)
++ Um dos algoritmos de criptografia usado em sua assinatura é o HMAC SHA256 (HS256)
++ O token pode ser decodificado
+    + Por mais que seja possível descriptografar o token, ele não possui informações sensíveis e só é possível alterá-lo sabendo a frase secreta do backend que foi usada para gerá-lo e criptografá-lo.
+
+## Cabeçalho da aplicação
++ Como header vai ter em toda tela ele foi usado em _app.component.html_ antes do <kbd>router-outlet</kbd>
+
+# Usuário logado e proteção de rotas
+## Separação de responsabilidades
