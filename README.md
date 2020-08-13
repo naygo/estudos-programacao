@@ -204,3 +204,8 @@
 
 # Usuário logado e proteção de rotas
 ## Separação de responsabilidades
++ Exibir a informação do usuário logado que está no payload do JWT, que está guardado no Local Storage
++ Instalação deste módulo que ajuda a pegar o payload
+    - npm install jwt-decode@2.2.0
++ Criado um serviço _user.service_, para armazenar o token com auxílio do _token.service_ e retornar o usuário logado
+
