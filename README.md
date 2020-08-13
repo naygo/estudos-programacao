@@ -99,7 +99,7 @@
     - nome do evento entre parenteses
     - contrário do data bind, são unidirecionais, só que cada um tem uma direção específica
         - [] - dado vem do componente (fonte de dados) para o template
-        - () - o evento é do disparado, vai da view para o compoenente
+        - () - o evento é do disparado, vai da view para o componente
 
 + Pipe e implementação
     - | -> pipe
