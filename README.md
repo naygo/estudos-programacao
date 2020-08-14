@@ -209,3 +209,31 @@
     - npm install jwt-decode@2.2.0
 + Criado um serviço _user.service_, para armazenar o token com auxílio do _token.service_ e retornar o usuário logado
 
+## O papel do BehaviorSubject
++ Colocar **$** para indicar que uma variável irá guardar o valor de um _Observable_.
+
++ Utilizar o BehaviorSubject (do rxjs), para que o nome de usuário continue aparecendo após a tela ser recarregada
+    - emite valor, se ninguém consome o valor ele guarda até alguém pegar o dado
+    - armazena a última emissão até que alguém apareça para consumi-la
+
+## Async pipe
++ com o Async pipe conseguimos capturar a emissão do _Observable_ diretamente do nosso template
++ Aplicando o pipe async pra pegar o subscribe do observable direto
+    - (user$ | async) as user;
+
+## Implementação do logout
++ UserService sabe tudo sobre o usuário, então é nele que o logout será feito.
+    - apagar o token e mandar null para o header
+    - também, método no header.component para redirecionamento
+
+## Guarda de rotas
++ Libera apenas rotas que fazem sentido ao usuário
++ Guarda usado: <kbd>CanActivate</kbd>
+
+## A diretiva routerLink
++ Objetivo: clicar em _Please, login!_ e ir para tela de login sem que a página recarregue do zero
+    - Dentro da tag <kbd>a</kbd> usar: [routerLink]="['']
+
+
+
+
