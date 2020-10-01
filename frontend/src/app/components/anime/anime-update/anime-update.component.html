@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>Editando Anime</mat-card-title>
+
+    <form action="">
+        <mat-form-field>
+            <input matInput placeholder="Nome" 
+                [(ngModel)]="anime.nome"
+                name="nome">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Nota" 
+                [(ngModel)]="anime.nota"
+                name="nota">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="updateAnime()" class="salvar">
+        Atualizar
+    </button>
+    <button mat-raised-button (click)="cancel()" class="cancelar">
+        Cancelar
+    </button>
+
+</mat-card>

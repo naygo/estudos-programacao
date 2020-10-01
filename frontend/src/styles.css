@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.red {
+    color: #e35e6b;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.snackbar-gray {
+    background: #424242;
+    color: white;
+}
+
+.salvar {
+    background-color: #e26b26;
+}
+
+.cancelar {
+    background-color: #212121;
+}
+
+form {
+    margin-top: 1.5rem;
+}
+
+.msg-sucess {
+    background-color:#e47a3c;
+    color: white;
+}
+
+.msg-error {
+    background-color: #e35e6b;
+    color: white;
+}

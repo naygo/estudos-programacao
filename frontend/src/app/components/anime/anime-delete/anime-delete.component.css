@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.delete {
+    background-color: #e35e6b;
+}
+
+button {
+    margin-right: 10px;
+}
+
+/** Alterando cor dos mat-input **/
+.mat-input-element {
+    caret-color: #e47a3c;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #e47a3c !important;
+   }
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: white !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: #e47a3c !important;;
+}
