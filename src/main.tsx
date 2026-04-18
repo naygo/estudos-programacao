@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { UserManagementApp } from '@/UserManagementApp'
 import '@/styles/globals.css'
 
 async function enableMocking() {
@@ -17,12 +18,7 @@ async function bootstrap() {
 
   createRoot(rootEl).render(
     <StrictMode>
-      <div className="p-8">
-        <h1 className="text-2xl font-semibold text-primary">user-management-mf</h1>
-        <p className="mt-2 text-muted-foreground">
-          MSW ativo — próximo: datasource + controllers
-        </p>
-      </div>
+      <UserManagementApp apiBaseUrl="/api" />
     </StrictMode>,
   )
 }

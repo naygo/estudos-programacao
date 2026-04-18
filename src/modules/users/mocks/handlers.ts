@@ -1,4 +1,4 @@
-import { delay, http, HttpResponse } from 'msw'
+import { delay, http, HttpResponse, type DefaultBodyType } from 'msw'
 import { fixtureUsers } from './fixtures'
 
 const isTest = import.meta.env.MODE === 'test'
@@ -22,7 +22,7 @@ async function simulatedLatency() {
   await delay(300 + Math.floor(Math.random() * 500))
 }
 
-function maybeFail(): HttpResponse | null {
+function maybeFail(): HttpResponse<DefaultBodyType> | null {
   if (forcedFailures > 0) {
     forcedFailures -= 1
     return transientErrorBody()
