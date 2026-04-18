@@ -29,7 +29,7 @@ export interface ApiError {
 }
 
 export function createApiError(
-  code: ApiErrorCode,
+  code: ApiErrorCode | string,
   message: string,
   extras?: { status?: number; cause?: unknown },
 ): ApiError {
