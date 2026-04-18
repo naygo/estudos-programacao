@@ -152,6 +152,15 @@ export default defineConfig([
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       'no-restricted-imports': 'off',
+      'react-refresh/only-export-components': 'off',
+    },
+  },
+
+  // Context files — relaxed
+  {
+    files: ['**/servicesContext.tsx', '**/*Context.tsx'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
     },
   },
 
