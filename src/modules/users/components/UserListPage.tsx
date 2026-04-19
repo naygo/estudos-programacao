@@ -1,4 +1,5 @@
 import { useCallback } from 'react'
+import { Loader2 } from 'lucide-react'
 import { ErrorState } from '@/components/states/ErrorState'
 import { useUsersList } from '@/modules/users/controllers/useUsersList'
 import { useUserDetails } from '@/modules/users/controllers/useUserDetails'
@@ -35,7 +36,14 @@ export function UserListPage({ onUserSelected }: UserListPageProps) {
 
   const { users, pagination, isLoading, isFetching, isError, error, refetch } = list
 
-  const announcement = buildAnnouncement({ isLoading, isError, error, total: pagination?.total })
+  const announcement = buildAnnouncement({
+    isLoading,
+    isFetching,
+    isError,
+    error,
+    total: pagination?.total,
+  })
+  const showRefreshIndicator = isFetching && !isLoading && !isError
 
   return (
     <section aria-labelledby="users-heading" className="flex flex-col gap-6">
@@ -51,8 +59,20 @@ export function UserListPage({ onUserSelected }: UserListPageProps) {
 
       <UserFilters value={filters} onChange={setFilters} onReset={reset} />
 
-      <div className="sr-only" role="status" aria-live="polite" data-testid="list-announcer">
-        {announcement}
+      <div
+        role="status"
+        aria-live="polite"
+        data-testid="list-announcer"
+        className="flex items-center gap-2 text-sm text-muted-foreground"
+      >
+        {showRefreshIndicator ? (
+          <Loader2
+            aria-hidden="true"
+            className="h-3.5 w-3.5 animate-spin text-primary"
+            data-testid="list-refreshing"
+          />
+        ) : null}
+        <span>{announcement}</span>
       </div>
 
       {isError && error ? (
@@ -95,17 +115,20 @@ export function UserListPage({ onUserSelected }: UserListPageProps) {
 
 function buildAnnouncement({
   isLoading,
+  isFetching,
   isError,
   error,
   total,
 }: {
   isLoading: boolean
+  isFetching: boolean
   isError: boolean
   error: { code: string; message: string } | null
   total: number | undefined
 }): string {
   if (isLoading) return 'Carregando usuários…'
   if (isError && error) return `Erro ao carregar: ${error.message}`
+  if (isFetching) return 'Atualizando resultados…'
   if (typeof total === 'number') {
     if (total === 0) return 'Nenhum usuário encontrado.'
     return `${total.toLocaleString('pt-BR')} usuários encontrados.`
