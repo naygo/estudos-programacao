@@ -2,6 +2,7 @@ import { delay, http, HttpResponse, type DefaultBodyType } from 'msw'
 import { fixtureUsers } from './fixtures'
 
 const isTest = import.meta.env.MODE === 'test'
+const isE2E = import.meta.env.VITE_E2E_DETERMINISTIC === '1'
 const TRANSIENT_CHANCE = 0.15
 const TRANSIENT_STATUS = 503
 
@@ -19,6 +20,10 @@ function transientErrorBody() {
 
 async function simulatedLatency() {
   if (isTest) return
+  if (isE2E) {
+    await delay(50)
+    return
+  }
   await delay(300 + Math.floor(Math.random() * 500))
 }
 
@@ -27,7 +32,7 @@ function maybeFail(): HttpResponse<DefaultBodyType> | null {
     forcedFailures -= 1
     return transientErrorBody()
   }
-  if (!isTest && Math.random() < TRANSIENT_CHANCE) {
+  if (!isTest && !isE2E && Math.random() < TRANSIENT_CHANCE) {
     return transientErrorBody()
   }
   return null
