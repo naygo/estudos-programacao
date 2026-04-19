@@ -1,12 +1,34 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import dts from 'vite-plugin-dts'
 import path from 'node:path'
 
 export default defineConfig(({ mode }) => {
   const isLibBuild = mode === 'mf'
 
   return {
-    plugins: [react()],
+    plugins: [
+      react(),
+      ...(isLibBuild
+        ? [
+            dts({
+              entryRoot: 'src',
+              include: ['src/mf-entry.tsx', 'src/UserManagementApp.tsx', 'src/**/*.ts', 'src/**/*.tsx'],
+              exclude: [
+                'src/**/*.test.ts',
+                'src/**/*.test.tsx',
+                'src/**/*.stories.tsx',
+                'src/test/**',
+                'src/modules/users/mocks/**',
+                'src/main.tsx',
+              ],
+              rollupTypes: true,
+              insertTypesEntry: true,
+              tsconfigPath: './tsconfig.app.json',
+            }),
+          ]
+        : []),
+    ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src'),

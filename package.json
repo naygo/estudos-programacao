@@ -3,6 +3,16 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "main": "./dist/user-management-mf.js",
+  "module": "./dist/user-management-mf.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/user-management-mf.js"
+    }
+  },
+  "files": ["dist"],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -79,7 +89,8 @@
   },
   "peerDependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "@tanstack/react-query": "^5.0.0"
   },
   "msw": {
     "workerDirectory": [

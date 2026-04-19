@@ -164,6 +164,14 @@ export default defineConfig([
     },
   },
 
+  // MF entry — lib export, não é alvo de HMR
+  {
+    files: ['src/mf-entry.tsx'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
+  },
+
   // Config files
   {
     files: ['*.config.{ts,js}', '.storybook/**/*.{ts,tsx}'],
