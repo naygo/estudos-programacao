@@ -1,6 +1,11 @@
 import { delay, http, HttpResponse, type DefaultBodyType } from 'msw'
 import { fixtureUsers } from './fixtures'
 
+/**
+ *- Dev: latência realista + 15% falhas random (pra ver retry funcionando)
+  - E2E: 50ms latência + zero falhas random (testes não podem ser flaky)
+  - Test (integration): 0ms latência + zero falhas random (determinismo total)
+ */
 const isTest = import.meta.env.MODE === 'test'
 const isE2E = import.meta.env.VITE_E2E_DETERMINISTIC === '1'
 const TRANSIENT_CHANCE = 0.15
