@@ -1,0 +1,138 @@
+{
+  "angular-coder-web-moderno": {
+    "branch": "master",
+    "head": "8e10dfcfbd3e09f08b9306eaa4d8ebd821d890d1",
+    "tree": "7cf7e2c23200eb3c5d10134be07cdd326383e939",
+    "private": true,
+    "description": "Curso Web Moderno: CRUD de animes em Angular",
+    "prefix": "projetos/angular-coder-web-moderno"
+  },
+  "cypress-alura": {
+    "branch": "master",
+    "head": "1590b226a071ff39d7e9d935f7fe7c02c6db5bb3",
+    "tree": "40acd7cd2245bda051acf4d7a91186c85969d86f",
+    "private": false,
+    "description": "Estudos de testes com Cypress",
+    "prefix": "projetos/cypress-alura"
+  },
+  "frontendmentor-profile-card-component": {
+    "branch": "main",
+    "head": "a909fcba086affae35d80f5b9805a6c1435bfe3e",
+    "tree": "54660a6fef45cca919a0ca7ad5852487294d25a7",
+    "private": false,
+    "description": "Exercício de interface do Frontend Mentor",
+    "prefix": "projetos/frontendmentor-profile-card-component"
+  },
+  "barbearia-alura": {
+    "branch": "master",
+    "head": "f30d3b12eca1b5b8d5a7df46ab169cccf8a3c589",
+    "tree": "25407d149ff7f7d6abb0c1a792d93a4692dca4b6",
+    "private": true,
+    "description": "Curso de HTML e CSS: site de barbearia",
+    "prefix": "projetos/barbearia-alura"
+  },
+  "testes-angular": {
+    "branch": "master",
+    "head": "dc138c4f2f050e40c423e945ddd8b5be1d8663c4",
+    "tree": "3e44a1575d83c3fb9e762ebaf23f5e260a3daf6b",
+    "private": false,
+    "description": "Curso de testes em Angular: componente de curtidas e serviço de IDs",
+    "prefix": "projetos/testes-angular"
+  },
+  "curso-angular-loiane": {
+    "branch": "main",
+    "head": "8d3e5cebaa0962be27a884f5074e7e2bdeef35ff",
+    "tree": "82ea2de73d38c5431d07cbc556412dae655db161",
+    "private": false,
+    "description": "Exemplos do curso de Angular",
+    "prefix": "projetos/curso-angular-loiane"
+  },
+  "alura-typescript-1": {
+    "branch": "master",
+    "head": "8c78218a549c1b98e98507910992ed6fdf323c24",
+    "tree": "1deca011252a0605ebc146ea6a5470dba0afe7f9",
+    "private": true,
+    "description": "Curso de TypeScript: parte 1",
+    "prefix": "projetos/alura-typescript-1"
+  },
+  "control-value-access": {
+    "branch": "master",
+    "head": "61d2cd0b3ca838a1fcb19d1ebb44de55e22e1bc9",
+    "tree": "c00ad9349fce11ec4fde3ec16f5ee34752c3ffab",
+    "private": false,
+    "description": "ControlValueAccessor e formulários reativos em Angular",
+    "prefix": "projetos/control-value-access"
+  },
+  "-sq-bootcamp-angular": {
+    "branch": "main",
+    "head": "be8ae7dd746f3fc8be92e93020f7e6780e7c1b88",
+    "tree": "f0dfb8cc212943fb194bcb6637678c84b78ab4e0",
+    "private": false,
+    "description": "Exercícios do bootcamp de Angular",
+    "prefix": "projetos/-sq-bootcamp-angular"
+  },
+  "gatitobook": {
+    "branch": "master",
+    "head": "0f51dad1c5051c42cdb582e37953101ebe0b031e",
+    "tree": "f22d93a54f1f884bdd06949177a58acfe0e89533",
+    "private": false,
+    "description": "Projeto de curso com frontend Angular e API",
+    "prefix": "projetos/gatitobook"
+  },
+  "nlw-4-react": {
+    "branch": "main",
+    "head": "2473e9b03b717c11ddf132a9e38dd7888722437a",
+    "tree": "2b78ea98dee239553514440d268b73c8a8655343",
+    "private": false,
+    "description": "Projeto React desenvolvido durante a NLW 4",
+    "prefix": "projetos/nlw-4-react"
+  },
+  "sql-node-sequelize": {
+    "branch": "master",
+    "head": "7db71075dfe362823ce9bd8cff3be478528519f7",
+    "tree": "c772410316339f6a0dc6faa147b3c2d0ad3fcef9",
+    "private": false,
+    "description": "Estudos de Node.js, SQL e Sequelize",
+    "prefix": "projetos/sql-node-sequelize"
+  },
+  "nlw-4-node": {
+    "branch": "master",
+    "head": "e84993c03887b06c80457534557b4bc41b500a79",
+    "tree": "b2d64bd6edd544602c77a9eada859f6c62401892",
+    "private": false,
+    "description": "Projeto Node.js desenvolvido durante a NLW 4",
+    "prefix": "projetos/nlw-4-node"
+  },
+  "learning-angular": {
+    "branch": "master",
+    "head": "29004750b0f6fe76ddb95a182927bec2f762aa2f",
+    "tree": "0db148c1557394872e89a48d58c184f3291cac45",
+    "private": false,
+    "description": "Estudos de formulários, rotas, guards, resolvers e templates",
+    "prefix": "projetos/learning-angular"
+  },
+  "new-thinkers-calendar": {
+    "branch": "main",
+    "head": "5033d172d26ba3ee56932e5fd22eddb19ae55137",
+    "tree": "a9d13b969ac4103701c56ca7484c99acd01023e2",
+    "private": false,
+    "description": "Bootcamp New Thinkers: aplicação Calendar",
+    "prefix": "projetos/new-thinkers-calendar"
+  },
+  "alurapic": {
+    "branch": "master",
+    "head": "cfab286d8dfc23a50256db0ab1a66ad35e3d43e8",
+    "tree": "a85cd21842254dfc695b595c9ff511ae7d01eccc",
+    "private": true,
+    "description": "Projeto de curso em Angular",
+    "prefix": "projetos/alurapic"
+  },
+  "curso-web-moderno-com-javascript": {
+    "branch": "master",
+    "head": "5816838680ec0ea3b8e49388aad49a019c953fe7",
+    "tree": "0f0368f7dd987423bc1e8c3a28eb14f8d9782de0",
+    "private": false,
+    "description": "Exercícios do curso Web Moderno com JavaScript",
+    "prefix": "projetos/curso-web-moderno-com-javascript"
+  }
+}
