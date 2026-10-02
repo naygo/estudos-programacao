@@ -1,0 +1,20 @@
+[
+  {
+    "email": "luznoceda@email.com",
+    "fullName": "Luz Noceda",
+    "userName": "luznoceda",
+    "password": "humanwitch"
+  },
+  {
+    "email": "Amity Blight",
+    "fullName": "Amity Blight",
+    "userName": "amityblight",
+    "password": "emowitch"
+  },
+  {
+    "email": "edalynclawthorne@email.com",
+    "fullName": "Edalyn Clawthorne",
+    "userName": "edalynclawthorne",
+    "password": "badgirlcoven"
+  }
+]
