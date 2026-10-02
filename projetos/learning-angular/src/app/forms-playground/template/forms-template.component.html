@@ -1,0 +1,31 @@
+<h3>FORMS PLAYGROUND</h3>
+
+<p>
+  {{ userInfo | json }}
+</p>
+
+<form #form="ngForm" [ngFormOptions]="{ updateOn: 'blur' }" (ngSubmit)="onSubmitForm(form)">
+  <div>
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" [(ngModel)]="userInfo.name" />
+  </div>
+
+  <div>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" [(ngModel)]="userInfo.email" />
+  </div>
+
+  <div>
+    <label for="age">Age: </label>
+    <input type="age" id="age" name="age" [(ngModel)]="userInfo.age" />
+  </div>
+
+  <br>
+
+  <button>Save</button>
+</form>
+
+<br><br>
+<!-- outside the form, this is a standalone control -->
+<input type="search" placeholder="Searh" [(ngModel)]="search">
+<p>{{ search }}</p>
