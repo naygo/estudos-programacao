@@ -1,0 +1,124 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font: 400 1rem 'Kumbh Sans', sans-serif;
+}
+
+p {
+    color: var(--dark-grayish-blue);
+}
+
+strong {
+    font-size: 18px;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background:
+        url('./images/bg-pattern-top.svg') no-repeat, 
+        url('./images/bg-pattern-bottom.svg') no-repeat var(--dark-cyan);
+
+    background-position: -65% 200%, 160% -200%;
+}
+
+.card {
+    width: 350px;
+
+    background: white;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.header img {
+    border-radius: 15px 15px 0 0;
+}
+
+
+.profile {
+    position: relative;
+}
+
+.profile img {
+    background: white;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+    border: 5px solid white;
+    border-radius: 999%;
+}
+
+.info {
+    padding: 5rem 0 1.5rem 0;
+}
+
+.info p {
+    margin-top: 0.7rem;
+}
+
+.info span {
+    color: var(--dark-grayish-blue);
+    margin-left: 0.3rem;
+}
+
+.line {
+    border-bottom: 0.5px solid rgb(224, 224, 224);
+    width: 100%;
+}
+
+.count {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 80%;
+    padding: 2rem 0;
+}
+
+.count div {
+    display: flex;
+    flex-direction: column;
+}
+
+.count p {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+}
+
+@media(max-width: 375px) {
+    body {
+        background:
+        url('./images/bg-pattern-top.svg') no-repeat, 
+        url('./images/bg-pattern-bottom.svg') no-repeat var(--dark-cyan);
+
+        background-position: 120% 210%, -20% -100%;
+    }
+}
+
