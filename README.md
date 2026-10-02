@@ -33,6 +33,6 @@ As branches principais dos repositórios de origem foram importadas sem squash, 
 
 O arquivo `ORIGENS.json` registra os nomes, branches e commits usados na consolidação. O histórico completo, incluindo outras branches e tags, também foi guardado em backups locais antes da publicação.
 
-Os repositórios de origem não foram excluídos por esta consolidação.
+Os repositórios de origem foram removidos após a verificação dos arquivos, commits e datas preservados neste acervo.
 
 Este acervo é público como registro dos estudos de programação.
