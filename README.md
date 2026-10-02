@@ -1,6 +1,6 @@
 # Estudos de programação
 
-Acervo histórico de cursos, bootcamps e exercícios de programação. Reúne estudos de Angular, React, Node.js, TypeScript, HTML, CSS, SQL e testes automatizados, preservando os projetos e seus históricos originais.
+Acervo histórico de cursos, bootcamps, exercícios de programação e testes técnicos de entrevista. Reúne estudos de Angular, React, Node.js, TypeScript, HTML, CSS, SQL e testes automatizados, preservando os projetos e seus históricos originais.
 
 
 Cada projeto permanece em uma pasta própria, com seus arquivos e instruções originais. O código foi preservado como registro da época; a consolidação não atualiza dependências nem valida sua execução.
@@ -26,6 +26,7 @@ Cada projeto permanece em uma pasta própria, com seus arquivos e instruções o
 | [new-thinkers-calendar](projetos/new-thinkers-calendar/) | Bootcamp New Thinkers: aplicação Calendar |
 | [alurapic](projetos/alurapic/) | Projeto de curso em Angular |
 | [curso-web-moderno-com-javascript](projetos/curso-web-moderno-com-javascript/) | Exercícios do curso Web Moderno com JavaScript |
+| [user-management-mf](projetos/user-management-mf/) | Teste técnico de entrevista: microfrontend de gerenciamento de usuários |
 
 ## Histórico e origem
 
