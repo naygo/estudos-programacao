@@ -35,4 +35,4 @@ O arquivo `ORIGENS.json` registra os nomes, branches e commits usados na consoli
 
 Os repositórios de origem não foram excluídos por esta consolidação.
 
-Este acervo é privado porque alguns repositórios de origem eram privados.
+Este acervo é público como registro dos estudos de programação.
