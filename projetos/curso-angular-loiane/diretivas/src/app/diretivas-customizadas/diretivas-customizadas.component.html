@@ -1,0 +1,24 @@
+<p fundoAmarelo>
+  Texto com fundo amarelo
+</p>
+
+<button fundoAmarelo>Botão com fundo amarelo</button>
+
+<br>
+
+<p highlightMouse>Texto com highlight quando passo mouse</p>
+
+<!-- <p highlight [defaultColor]="'grey'" [hightlightColor]="'red'">Texto com cores customizadas</p> -->
+<p highlight [defaultColor]="'grey'" [hightlight]="'red'">Texto com cores customizadas</p>
+
+
+<h5>Diretiva Estrutural Customizada - ngElse</h5>
+<div *ngIf="mostrarAnime">
+  Lista de animes aqui.
+</div>
+
+<div *ngElse="mostrarAnime">
+  Não existem animes para serem listados
+</div>
+
+<button (click)="onMostrarAnimes()">Mostrar ou esconder animes</button>

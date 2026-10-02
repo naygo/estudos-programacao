@@ -1,0 +1,25 @@
+<h5>*ngIf</h5>
+
+<div *ngIf="animes.length > 0">
+  Lista de animes aqui
+</div>
+
+<div *ngIf="animes.length == 0">
+  Não existem animes para serem listados
+</div>
+
+<div *ngIf="!mostrarAnime">
+  Não existem animes para serem listados
+</div>
+
+<button (click)="onMostrarAnimes()">Mostrar ou esconder animes</button>
+
+<h5>Hidden como alternativa</h5>
+<div [hidden]="!mostrarAnime">
+  Lista de animes aqui
+</div>
+
+<div [hidden]="mostrarAnime">
+  Não existem animes para serem listados
+</div>
+

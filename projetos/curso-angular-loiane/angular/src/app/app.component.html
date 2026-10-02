@@ -1,0 +1,8 @@
+<h1>ANGULAR</h1>
+
+<app-data-binding></app-data-binding>
+
+<h3>Ciclo de Vida</h3>
+<app-ciclo [valorInicial]="valor" *ngIf="!deletarCiclo"></app-ciclo>
+<button (click)="mudarValor()">Mudar valor</button>
+<button (click)="destruirCiclo()">Deletar</button>

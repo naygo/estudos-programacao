@@ -1,0 +1,26 @@
+h2 {
+    justify-content: center;
+    display: flex;
+}
+
+h3 {
+    padding-top: 1em;
+}
+
+section {
+    padding: 2em;
+}
+
+.interpolation-property-binding, .event-binding,
+.input-output-property {
+    background-color: cornflowerblue;
+}
+
+.class-style-binding, .two-way-data-binding {
+    background-color: wheat;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
