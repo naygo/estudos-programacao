@@ -1,0 +1,16 @@
+<!-- how to make any angular component behave like a formControl -->
+
+<form [formGroup]="form">
+  <app-test-component formControlName="testComponent"></app-test-component>
+
+  <label>double the count: </label>
+  <input type="text" formControlName="double">
+
+  <button 
+    style="display: block; margin-top: 5rem" 
+    [disabled]="!form.touched"
+    (click)="logValues()"
+  >
+    log values
+  </button>
+</form>
